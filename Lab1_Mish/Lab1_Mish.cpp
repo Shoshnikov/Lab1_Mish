@@ -20,7 +20,7 @@ int main()
 	Input(tringleSide);
 	cout << "Сторона квадрата "<< squerSide << " Сторона треугольника: " << tringleSide <<endl;
 
-	if (x < 0 && x > squerSide && y < squerSide || x > 0 && x + y < tringleSide * 2) 
+	if (x < 0 && abs(x) > squerSide && y < squerSide && y > 0 || x > 0 && x + abs(y) < tringleSide * 2 && y < 0) 
 		cout << "Точка попадает в область\n";
 	else
 		cout << "Точка не попадает в область\n";
